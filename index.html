@@ -8,8 +8,9 @@
     <title>Train Scheduler Homework</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -19,7 +20,7 @@
     <!-- Moment.js Reference -->
     <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
+    
 </head>
 
 <body>
@@ -28,11 +29,11 @@
 <div class="container">
 
     <!-- Jumbotron -->
-    <div class="jumbotron" style="background-color: black; color: white">
-        <h1 class="text-center">Lionel Train Schedule</h1>
-        <h3 class="text-center">All Aboard Please!</h3>
-        <h5 class="text-center" id="currentTime"></h5>
-        <h5 class="text-center" new Date().to/String()></h5>
+    <div class="jumbotron">
+        <h1 class="text-center"><strong>Lionel Train Schedule</strong></h1>
+        <h3 class="text-center">A Lifetime Of Railroading</h3>
+        <img class="img thumbnail center-block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7kTMD_SE7ln-FyOmIMQ3hIeL7Yn1Jpu7eB-zs_K-pFJUYQcjf" alt="Lionel Train">
+
     </div>
 
     <div class="row">
@@ -107,21 +108,15 @@
                         <label for="frequency-input">Frequency (min)</label>
                         <input class="form-control" id="frequency-input" type="text">
                     </div>
-                    <button class="btn btn-primary" id="add-train-btn" type="submit">Submit</button>
+                    <button type="submit" class="btn btn-primary" id="add-train-btn">Submit</button>
                 </form>
 
             </div>
-
         </div>
-
     </div>
-
 </div>
 
 </div>
-<script>
-    document.getElementById("currentTime").innerHTML = Date();
-</script>
 
 <!-- JavaScript -->
 <script src="assets/javascript/trainCode.js"></script>
