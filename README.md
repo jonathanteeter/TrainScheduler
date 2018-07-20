@@ -15,6 +15,7 @@ Getting all the required information in the table was challenging in different w
 - Figuring the first train time of the day required pushing back 1 year to make sure the train comes before the current time.
 - Calculating all the required times using Moment.js (first train, current time, difference in time, remainder, minutes until next train, arrival time)
 
-## Link to [My Portfolio](https://teeterjm58.github.io/Basic-Portfolio/portfolio.html)
+## Link to [My Portfolio] 
+(https://teeterjm58.github.io/jtPortfolio/)
 
 
