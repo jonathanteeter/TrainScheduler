@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TrainSchedule
 This is a train scheduling application that incorporates Firebase to store arrival and departure data real-time using Moment.js
 
@@ -45,21 +44,3 @@ This is a train scheduling application that incorporates Firebase to store arriv
 
 ## Link to [My Portfolio] 
 (https://jonathanteeter.github.io/jtPortfolio/)
-
-
-=======
-# TrainScheduler
-Train scheduler incorporates Firebase to store arival/departure data using Moment.js.
-
-The steps to complete are:
-   1. Initialize Firebase
-   2. Create button for adding trains - then update the html + update the database
-   3. When adding a train, submit the following:
-      3a. Train Name
-      3b. Destination 
-      3c. First Train Time -- in military time
-      3d. Frequency -- in minutes
-      3e. Code this app to calculate when the next train will arrive; this should be relative to the current time.
-      3f. Users from many different machines must be able to view same train times.
-   4. Styling and theme are completely up to you. Get Creative!
->>>>>>> 40e19a3cce02457b09b59b96424d8f106c7f68e7
