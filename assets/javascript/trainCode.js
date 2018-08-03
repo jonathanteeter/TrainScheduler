@@ -5,16 +5,16 @@
 // 1. Initialize Firebase
 // 2. Create button for adding trains - then update the html + update the database
 // 3. When adding a train, submit the following:
-// 3a. Train Name
-// 3b. Destination 
-// 3c. First Train Time -- in military time
-// 3d. Frequency -- in minutes
-// 3e. Code this app to calculate when the next train will arrive; this should be relative to the current time.
-// 3f. Users from many different machines must be able to view same train times.
-// 4. Styling and theme are completely up to you. Get Creative!
+// 3.1. Train Name
+// 3.2. Destination 
+// 3.3. First Train Time -- in military time
+// 3.4. Frequency -- in minutes
+// 3.5. Code this app to calculate when the next train will arrive; this should be relative to the current time.
+// 3.6. Users from many different machines must be able to view same train times.
+// 4. Uploads train schedules data to the database
 
 
-// Initialize Firebase
+// 1. Initialize Firebase
 var config = {
     apiKey: "AIzaSyAAV1VuH3LEpUZHKvazhtGH5t5nFMdepPI",
     authDomain: "lionel-schedule.firebaseapp.com",
@@ -29,6 +29,7 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 // 2. Button for adding Trains
+// 3. When adding a train, submit the following
 $("#add-train-btn").on("click", function(event) {
     event.preventDefault();
 
@@ -74,7 +75,7 @@ $("#add-train-btn").on("click", function(event) {
         min: minutesTillTrain
     };
 
-    // Uploads train schedules data to the database
+    // 4. Uploads train schedules data to the database
     database.ref().push(trainSchedule);
 
     // Logs everything to console
@@ -95,7 +96,7 @@ $("#add-train-btn").on("click", function(event) {
     $("#frequency-input").val("");
 });
 
-// 3. Create Firebase event for "adding trains to the database" and a "row in the html" when a user adds an entry
+// Create Firebase event for "adding trains to the database" and a "row in the html" when a user adds an entry
 database.ref().on("child_added", function(childSnapshot, prevChildKey) {
     console.log(childSnapshot);
     console.log(childSnapshot.val());
