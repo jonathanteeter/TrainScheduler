@@ -2,19 +2,18 @@
 This is a train scheduling application that incorporates Firebase to store arrival and departure data real-time using Moment.js
 
 ## Design & Technology
-* When adding trains to the schedule, include the following:
+* User can add trains to the schedule to include:
     * Train name
     * Destination
     * First train time
     * Frequency
-* The train schedule is displayed to the website real-time to include the countdown until next arrivals.
-* When creating the website table, include the following for each train:
+* Train schedule is displayed to the website real-time to include the following for each train:
     * Train name
     * Destination
     * Frequency
-    * Next Arrival
-    * Minutes Away
-* Use Firebase to hosts the arrival and departure data.
+    * Next Arrival Time
+    * Minutes Away (countdown)
+* Firebase will host the arrival and departure data.
 * Key technologies used to build this application are:
     * Bootstrap framework
     * HTML
